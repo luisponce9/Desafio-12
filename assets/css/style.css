@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100vh; 
+}
+
+#boton1 {
+    grid-area: act1;
+}
+#boton2 {
+    grid-area: act2;
+}
+#boton3 {
+    grid-area: act3;
+}
+
+#index{
+    display: grid;
+    grid-template-areas:
+        "act1"
+        "act2"
+        "act3";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100%;
+}
+
+#textoAct{
+    grid-area: textoAct;
+}
+#stickersAct2{
+    grid-area: stickersAct2;
+}
+#verificarAct2{
+    grid-area: verificarAct2;
+}
+#botonVolver{
+    grid-area: botonVolver;
+}
+
+#act2{
+    display: grid;
+    grid-template-areas:
+        "textoAct2"
+        "stickersAct2"
+        "verificarAct2"
+        "botonVolver";
+    grid-template-rows: 40px 400px 100px 40px;
+    height: 100%;
+}
+
+#selectsAct3{
+    grid-area: selectsAct3;
+}
+#verificarAct3{
+    grid-area: verificarAct3;
+}
+
+#act3{
+    display: grid;
+    grid-template-areas:
+        "textoAct3"
+        "selectsAct3"
+        "verificarAct3"
+        "botonVolver";
+    grid-template-rows: 40px 400px 100px 40px;
+    height: 100%;
+}
+
+button, a {
+    width: auto;
+    height: auto;
+}
+
+img {
+    height: 70%;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+}
+
+span img{
+    height: 200px;
+}

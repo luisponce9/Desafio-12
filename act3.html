@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 2 - Actividad 3</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main id="act3">
+        <h3 id="textoAct3" class="d-flex align-items-center justify-content-center mt-4">
+            Ingresa el password 
+        </h3>
+        <div id="selectsAct3" class="d-flex align-items-center justify-content-evenly">
+            <select id="select1" class="form-select">
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <select id="select2" class="form-select">
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+            <select id="select3" class="form-select">
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+        </div>
+        <span id="verificarAct3" class="d-flex flex-column align-items-center justify-content-center">
+            <p id="validar"></p>
+            <button 
+            onclick="
+            validar = document.querySelector('#validar')
+            pw = select1.value + select2.value + select3.value
+            
+            if(pw == '911'){
+                validar.innerHTML = 'Password 1 correcto.'
+            }
+            else if (pw == '714'){
+                validar.innerHTML = 'Password 2 correcto.'
+            }
+            else{
+                validar.innerHTML = 'Password incorrecto.'
+            }">
+                Ingresar
+            </button>
+        </span>
+        <span id="botonVolver" class="d-flex align-items-center justify-content-center mt-3">
+            <a href="index.html">
+                <button class="btn btn-secondary">Volver a la página principal</button>
+            </a>
+        </span>
+    </main>
+</body>
+
+</html>
